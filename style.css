@@ -108,3 +108,30 @@ body{
     display: none;
 
 }
+
+@media (max-width:441px) {
+    .card {
+        width: 90%;
+        max-width: 470px;
+        /* background: linear-gradient(135deg, #00feba, #585186); */
+        background: linear-gradient(135deg, #0016fe, #00ff9f);
+        color: #fff;
+        margin: 110px auto 0;
+        border-radius: 20px;
+        padding: 40px 6px;
+        text-align: center;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 53px;
+        height: 53px;
+        cursor: pointer;
+    
+    }
+    .search button img{
+        width: 32px;
+    }
+}
