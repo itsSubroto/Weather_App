@@ -94,6 +94,14 @@ searchBtn.addEventListener("click",()=>{
     checkWheather(searchBox.value)
 })
 
+// my code for submiting form by Enter Key(13)
+let enterKey = document.querySelector(".search");
+enterKey.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    checkWheather(searchBox.value)
+  }
+});
+
 
 </script>
 
