@@ -9,7 +9,7 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
+            <input type="text" placeholder="enter city name" spellcheck="false" cursor blink>
             <button><img src="images/search.png" ></button>
         </div>
         <div class="error">
@@ -98,7 +98,8 @@ searchBtn.addEventListener("click",()=>{
 let enterKey = document.querySelector(".search");
 enterKey.addEventListener("keyup", (e) => {
   if (e.keyCode === 13) {
-    checkWheather(searchBox.value)
+    checkWheather(searchBox.value);
+    searchBox.blur() // i added this blur means after i press enter key then the cursor will unfocused or blure...
   }
 });
 
